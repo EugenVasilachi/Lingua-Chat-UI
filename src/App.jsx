@@ -9,7 +9,7 @@ import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
 import { useChatStore } from "./lib/chatStore";
 
-console.log("API Key:", import.meta.env.VITE_API_KEY);
+console.log("API Key:", process.env.VITE_API_KEY);
 
 const App = () => {
   const { currentUser, fetchUserInfo } = useUserStore();
