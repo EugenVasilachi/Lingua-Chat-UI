@@ -10,10 +10,9 @@ const uploadAudio = async (file) => {
   const storage = getStorage();
 
   const metadata = {
-    contentType: "audio/mp3", // Change to the appropriate MIME type
+    contentType: "audio/mp3",
   };
 
-  // Change 'audios/' to specify the folder for audio uploads
   const storageRef = ref(storage, `audios/${date.getTime()}_${file.name}`);
   const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
