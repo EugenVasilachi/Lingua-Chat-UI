@@ -9,6 +9,8 @@ import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
 import { useChatStore } from "./lib/chatStore";
 
+console.log("API Key:", import.meta.env.VITE_API_KEY);
+
 const App = () => {
   const { currentUser, fetchUserInfo } = useUserStore();
   const { chatId } = useChatStore();
@@ -23,7 +25,7 @@ const App = () => {
   }, [fetchUserInfo]);
 
   return (
-    <div className='container'>
+    <div className="container">
       {currentUser ? (
         <>
           <List />
