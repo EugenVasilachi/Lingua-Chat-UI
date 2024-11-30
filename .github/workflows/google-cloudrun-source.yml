@@ -67,7 +67,7 @@ jobs:
           region: "${{ env.REGION }}"
           # NOTE: If using a different source folder, update the image name below:
           source: "./"
-          env_vars: |
+          build_args: |
             VITE_API_KEY=${{ secrets.VITE_API_KEY }}
             VITE_AUTH_DOMAIN=${{ secrets.VITE_AUTH_DOMAIN }}
             VITE_DATABASE_URL=${{ secrets.VITE_DATABASE_URL }}
