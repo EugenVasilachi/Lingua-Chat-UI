@@ -4,14 +4,14 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  databaseURL: import.meta.env.VITE_DATABASE_URL,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-  measurementId: import.meta.env.VITE_MEASUREMENT_ID,
+  apiKey: "AIzaSyDM5D7mYMHNHnRWkzLkO1v-Kl_i6JVpeEM",
+  authDomain: "rebeldot-7a26b.firebaseapp.com",
+  databaseURL: "https://rebeldot-7a26b-default-rtdb.firebaseio.com",
+  projectId: "rebeldot-7a26b",
+  storageBucket: "rebeldot-7a26b.appspot.com",
+  messagingSenderId: "94179945908",
+  appId: "1:94179945908:web:2bd8a40e3494476511d6e1",
+  measurementId: "G-SSHYKGCS70",
 };
 
 console.log("firebaseConfig", firebaseConfig);

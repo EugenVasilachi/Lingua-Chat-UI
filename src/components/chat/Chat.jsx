@@ -15,7 +15,8 @@ import upload from "../../lib/upload";
 import uploadAudio from "../../lib/uploadAudio";
 import axios from "axios";
 
-const FLASK_BACKEND_URL = import.meta.env.VITE_FLASK_BACKEND_URL;
+const FLASK_BACKEND_URL =
+  "https://lingua-chat-api-service-182702215690.europe-west4.run.app";
 
 export default function Chat() {
   const [open, setOpen] = useState(false);
